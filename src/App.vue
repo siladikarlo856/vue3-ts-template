@@ -19,10 +19,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { Axios } from "axios";
+import { defineComponent, inject } from "vue";
 
 export default defineComponent({
   setup() {
+    const axios = inject<Axios>("axios"); // inject axios
+
+    axios
+      ?.get("https://dummyjson.com/products/1")
+      .then((response: { data: any }) => {
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.error("API call error", err);
+      });
+
     console.log("Test lint warning");
     return {};
   },
