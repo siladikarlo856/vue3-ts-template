@@ -54,6 +54,7 @@
     "webpack-dev-server": "^4.3.1"
   },
   "dependencies": {
+    "pinia": "^2.0.26",
     "vue": "^3.2.45"
   }
 }
