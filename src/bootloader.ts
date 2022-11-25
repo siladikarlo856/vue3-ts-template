@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 
+import "devextreme/dist/css/dx.light.css";
 import "./index.scss";
 
 import App from "./App.vue";
