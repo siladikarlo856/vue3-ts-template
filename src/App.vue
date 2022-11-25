@@ -12,7 +12,7 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   setup() {
-    console.log("Test lint warning")
+    console.log("Test lint warning");
 
     return {};
   },
